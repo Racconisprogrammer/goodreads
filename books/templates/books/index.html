@@ -1,0 +1,15 @@
+{% extends 'books/base.html' %}
+
+
+{% block title %}
+Home page
+{% endblock %}
+
+
+{% block content %}
+<div class="div">
+  <a href="{% url 'users:register' %}">Register</a> |
+  <a href="{% url 'users:login' %}">Login</a>
+</div>
+
+{% endblock %}
